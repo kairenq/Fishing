@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Старый поплавок — о рыбалке без шума</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand"><div class="brand-badge"></div><div>Старый поплавок</div></div>
+      <nav class="nav">
+        <a class="active" href="index.html">Главная</a>
+        <a href="spots.html">Места</a>
+        <a href="fish.html">Рыба</a>
+        <a href="gear.html">Снасти</a>
+        <a href="tips.html">Советы</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-card">
+        <div>
+          <div class="ribbon">погода · вода · характер дна</div>
+          <h1>Рыбалка, где важна не витрина, а вода</h1>
+          <p>Подборка заметок о местах, рыбе, снастях и поведении на берегу. Без крикливых обещаний, без фальшивого глянца и без ощущения, что тебе снова продают одинаковую картинку.</p>
+          <div class="tag-row">
+            <div class="tag">утренние выходы</div>
+            <div class="tag">хищник и мирная рыба</div>
+            <div class="tag">простые сборки</div>
+            <div class="tag">реальные советы</div>
+          </div>
+          <div class="button-row">
+            <a class="btn" href="spots.html">Выбрать место</a>
+            <button id="tipBtn" class="btn alt" type="button">Случайный совет</button>
+          </div>
+        </div>
+
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="sun-glow"></div>
+          <div class="shore"></div>
+          <div class="water"></div>
+          <div class="man"></div>
+          <div class="rod"></div>
+          <svg class="cast-line" viewBox="0 0 260 220" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M212 118 L194 188" />
+          </svg>
+          <div class="float"></div>
+          <div class="ripples r1"></div>
+          <div class="ripples r2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Что внутри</h2></div>
+        <div class="grid feature-grid">
+          <article class="card feature-card">
+            <div class="feature-mark">01</div>
+            <h3>Места</h3>
+            <p>Смотреть на берег недостаточно. Работают свал, тень, обратка, трава, глубина и то, как водоём ведёт себя в конкретный день.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-mark">02</div>
+            <h3>Рыба</h3>
+            <p>Разбор без скучного перечисления. Что любит, где держится, когда срабатывает резкая подача, а когда лучше не дёргаться вообще.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="feature-mark">03</div>
+            <h3>Снасти</h3>
+            <p>Без фанатизма и набора всего подряд. Только то, что реально помогает на воде, а не заполняет коробки лишним железом.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><span></span><h2>Ритм выезда</h2></div>
+        <div class="split">
+          <div class="list-paper timeline-paper">
+            <div class="timeline-row"><strong>Рассвет</strong><span>тихая вода, кромка камыша, первые осторожные выходы</span></div>
+            <div class="timeline-row"><strong>Утро</strong><span>поиск активной рыбы, смена точки, проверка глубины</span></div>
+            <div class="timeline-row"><strong>День</strong><span>больше ветра, меньше ошибок с лишним шумом и спешкой</span></div>
+            <div class="timeline-row"><strong>Вечер</strong><span>возврат на рабочие точки и внимательная подача</span></div>
+          </div>
+          <div class="list-paper quote-paper">
+            <div class="counter" id="catch-count" data-target="12">0</div>
+            <p class="small">условный счётчик удачного дня на воде</p>
+            <p id="quote" class="rotating-quote">Рыбалка начинается не с заброса, а с тишины.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-col footer-branding">
+      <div class="footer-title">Старый поплавок</div>
+      <p>Наблюдения о рыбалке, поведении рыбы, выборе снастей и чтении водоёма без шумной витрины и пустых обещаний.</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Навигация</div>
+      <a href="index.html">Главная</a>
+      <a href="spots.html">Места</a>
+      <a href="fish.html">Рыба</a>
+      <a href="gear.html">Снасти</a>
+      <a href="tips.html">Советы</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Разделы</div>
+      <a href="spots.html#routes">Береговые точки</a>
+      <a href="gear.html#kits">Комплекты снастей</a>
+      <a href="tips.html#checklist">Памятка перед выездом</a>
+      <a href="fish.html">Поведение рыбы</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Контакты</div>
+      <p>Тел.: +7 (900) 000-24-56</p>
+      <p>Email: river@oldfloat.ru</p>
+      <p>Адрес: Брянск, набережная Десны, 14</p>
+      <p>Ежедневно: 06:00–21:00</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <div>© Старый поплавок</div>
+    <div>Берег • вода • снасти • сезон</div>
+  </div>
+</footer>
+
+  <div id="tipModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="closeTipModal" type="button" aria-label="Закрыть">×</button>
+      <div class="ribbon">случайный совет</div>
+      <h3>Что стоит помнить</h3>
+      <p id="modalTipText">Совет появится здесь.</p>
+      <button id="nextTipBtn" class="btn" type="button">Другой совет</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

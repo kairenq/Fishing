@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Советы</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand"><div class="brand-badge"></div><div>Старый поплавок</div></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="spots.html">Места</a>
+        <a href="fish.html">Рыба</a>
+        <a href="gear.html">Снасти</a>
+        <a class="active" href="tips.html">Советы</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title"><span></span><h2>Полезные советы</h2></div>
+      <div class="split tips-split">
+        <div class="tips-stack">
+          <article class="tip-strip card"><strong>Не шуметь</strong><p>Шаги по пустому мостку, громкий разговор и бесконечные удары коробкой по настилу работают против тебя лучше любой плохой погоды.</p></article>
+          <article class="tip-strip card"><strong>Не зацикливаться</strong><p>Если точка мёртвая, не надо сидеть на ней из упрямства. Иногда уехать на десять метров полезнее, чем ждать чудо ещё час.</p></article>
+          <article class="tip-strip card"><strong>Смотреть на ветер</strong><p>Он меняет поверхность, подачу и поведение малька. Игнорировать ветер — это как ловить с закрытыми глазами и надеяться на случайность.</p></article>
+        </div>
+        <div class="advice-panel card">
+          <div class="ribbon">интерактивный блок</div>
+          <h3>Открой случайный совет</h3>
+          <p>Нажатие открывает pop-up с короткой подсказкой. Это быстрее и живее, чем просто прокручивать скучную колонку из одинаковых карточек.</p>
+          <button id="tipBtnSecondary" class="btn alt" type="button">Открыть pop-up</button>
+        </div>
+      </div>
+
+      <div class="check-grid">
+        <div class="check-card">
+          <h3>Перед выездом</h3>
+          <ul>
+            <li>проверь поводки, узлы и запасные крючки;</li>
+            <li>смотри не только прогноз, но и ветер;</li>
+            <li>не тащи лишнее, если идёшь на короткий берег.</li>
+          </ul>
+        </div>
+        <div class="check-card">
+          <h3>На месте</h3>
+          <ul>
+            <li>сначала изучи воду, потом распаковывай всё подряд;</li>
+            <li>обрати внимание на тень, траву, свал и движение малька;</li>
+            <li>не начинай с резких и хаотичных действий.</li>
+          </ul>
+        </div>
+        <div class="check-card">
+          <h3>После</h3>
+          <ul>
+            <li>отметь рабочую глубину и время поклёвок;</li>
+            <li>сделай вывод не по эмоциям, а по фактам;</li>
+            <li>не ври себе, если день был провален из-за спешки.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-box">
+      <div>Наблюдение полезнее суеты.</div>
+      <div>Старый поплавок</div>
+    </div>
+  </footer>
+
+  <div id="tipModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="closeTipModal" type="button" aria-label="Закрыть">×</button>
+      <div class="ribbon">случайный совет</div>
+      <h3>Коротко и по делу</h3>
+      <p id="modalTipText">Совет появится здесь.</p>
+      <button id="nextTipBtn" class="btn" type="button">Ещё совет</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

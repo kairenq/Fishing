@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рыба</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand"><div class="brand-badge"></div><div>Старый поплавок</div></div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="spots.html">Места</a>
+        <a class="active" href="fish.html">Рыба</a>
+        <a href="gear.html">Снасти</a>
+        <a href="tips.html">Советы</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-title"><span></span><h2>Поведение рыбы</h2></div>
+      <div class="note">Сухой список названий бесполезен. Нормально работает только то, что помогает понять поведение: где рыба держится, на что реагирует и какой ошибкой её проще всего распугать.</div>
+
+      <div class="fish-layout">
+        <aside class="fish-menu card">
+          <button class="fish-tab active" data-fish="karas" type="button">Карась</button>
+          <button class="fish-tab" data-fish="pike" type="button">Щука</button>
+          <button class="fish-tab" data-fish="okun" type="button">Окунь</button>
+          <button class="fish-tab" data-fish="lesh" type="button">Лещ</button>
+          <button class="fish-tab" data-fish="plotva" type="button">Плотва</button>
+          <button class="fish-tab" data-fish="lin" type="button">Линь</button>
+        </aside>
+
+        <section class="fish-stage card">
+          <div class="fish-view active" id="karas">
+            <div class="fish-banner warm">
+              <div class="fish-silhouette"></div>
+              <div>
+                <div class="ribbon">спокойная вода</div>
+                <h3>Карась</h3>
+                <p>Любит тихие участки, окна среди травы и аккуратную подачу. Если шуметь и сразу перекормить точку, можно самому убить клёв за полчаса.</p>
+              </div>
+            </div>
+            <div class="fish-facts">
+              <div><strong>Где искать</strong><span>камыш, тёплые мелководья, заливы</span></div>
+              <div><strong>Когда активен</strong><span>раннее утро, тёплый вечер</span></div>
+              <div><strong>Частая ошибка</strong><span>слишком много прикормки и суета у берега</span></div>
+            </div>
+          </div>
+
+          <div class="fish-view" id="pike">
+            <div class="fish-banner cool">
+              <div class="fish-silhouette pike"></div>
+              <div>
+                <div class="ribbon">укрытие и атака</div>
+                <h3>Щука</h3>
+                <p>Не любит бессмысленные забросы в пустоту. Её точки — коряги, окна в траве, кромка камыша, резкий перепад глубины и короткая возможность для броска.</p>
+              </div>
+            </div>
+            <div class="fish-facts">
+              <div><strong>Где искать</strong><span>укрытия, свалы, травяные карманы</span></div>
+              <div><strong>Когда активна</strong><span>утро, пасмурная погода, вечер</span></div>
+              <div><strong>Частая ошибка</strong><span>монотонная проводка без понимания рельефа</span></div>
+            </div>
+          </div>
+
+          <div class="fish-view" id="okun">
+            <div class="fish-banner gold">
+              <div class="fish-silhouette okun"></div>
+              <div>
+                <div class="ribbon">стайная рыба</div>
+                <h3>Окунь</h3>
+                <p>Часто выдаёт себя движением малька и всплесками. Может включиться резко, дать серию поклёвок и так же быстро исчезнуть, если тормозить с подачей.</p>
+              </div>
+            </div>
+            <div class="fish-facts">
+              <div><strong>Где искать</strong><span>бровки, мелкий хищный коридор, мостки</span></div>
+              <div><strong>Когда активен</strong><span>весь день, если есть кормовой движ</span></div>
+              <div><strong>Частая ошибка</strong><span>слишком крупная приманка и долгий поиск одной точкой</span></div>
+            </div>
+          </div>
+
+          <div class="fish-view" id="lesh">
+            <div class="fish-banner mist">
+              <div class="fish-silhouette lesh"></div>
+              <div>
+                <div class="ribbon">стабильная точка</div>
+                <h3>Лещ</h3>
+                <p>Нуждается в темпе и терпении. Если место выбрано нормально, он любит размеренную работу, а не бесконечную смену дистанции и оснастки.</p>
+              </div>
+            </div>
+            <div class="fish-facts">
+              <div><strong>Где искать</strong><span>русло, глубина, выход с бровки</span></div>
+              <div><strong>Когда активен</strong><span>утренние часы и ближе к вечеру</span></div>
+              <div><strong>Частая ошибка</strong><span>неровная подача и слишком ранняя смена точки</span></div>
+            </div>
+          </div>
+
+          <div class="fish-view" id="plotva">
+            <div class="fish-banner warm">
+              <div class="fish-silhouette plotva"></div>
+              <div>
+                <div class="ribbon">быстрый отклик</div>
+                <h3>Плотва</h3>
+                <p>Часто спасает день, когда крупная рыба молчит. Но она хорошо чувствует смену ветра, давления и грубую оснастку, которую многие недооценивают.</p>
+              </div>
+            </div>
+            <div class="fish-facts">
+              <div><strong>Где искать</strong><span>умеренная глубина, течение у кромки</span></div>
+              <div><strong>Когда активна</strong><span>утро и стабильная погода</span></div>
+              <div><strong>Частая ошибка</strong><span>грубая снасть и игнорирование ветра</span></div>
+            </div>
+          </div>
+
+          <div class="fish-view" id="lin">
+            <div class="fish-banner cool">
+              <div class="fish-silhouette lin"></div>
+              <div>
+                <div class="ribbon">тихая заросшая вода</div>
+                <h3>Линь</h3>
+                <p>Рыба для терпеливых. Любит тишину, траву и аккуратность. Там, где человек начинает нервничать и передёргивать снасть каждые две минуты, линя уже не будет.</p>
+              </div>
+            </div>
+            <div class="fish-facts">
+              <div><strong>Где искать</strong><span>заросшие заводи, мягкое дно, тишина</span></div>
+              <div><strong>Когда активен</strong><span>тёплые тихие зори</span></div>
+              <div><strong>Частая ошибка</strong><span>слишком частые перезабросы и шум на точке</span></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-box">
+      <div>Рыба не обязана вести себя по форумным легендам.</div>
+      <div>Старый поплавок</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
