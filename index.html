@@ -31,8 +31,7 @@
             <div class="tag">утренние выходы</div>
             <div class="tag">хищник и мирная рыба</div>
             <div class="tag">простые сборки</div>
-            <div class="tag">реальные советы</div>
-          </div>
+                      </div>
           <div class="button-row">
             <a class="btn" href="spots.html">Выбрать место</a>
             <button id="tipBtn" class="btn alt" type="button">Случайный совет</button>
@@ -89,8 +88,8 @@
             <div class="timeline-row"><strong>Вечер</strong><span>возврат на рабочие точки и внимательная подача</span></div>
           </div>
           <div class="list-paper quote-paper">
-            <div class="counter" id="catch-count" data-target="12">0</div>
-            <p class="small">условный счётчик удачного дня на воде</p>
+            <div class="counter" id="catch-count" data-target="5">0</div>
+            <p class="small">основных разделов в структуре сайта</p>
             <p id="quote" class="rotating-quote">Рыбалка начинается не с заброса, а с тишины.</p>
           </div>
         </div>
@@ -119,12 +118,13 @@
       <a href="tips.html#checklist">Памятка перед выездом</a>
       <a href="fish.html">Поведение рыбы</a>
     </div>
-    <div class="footer-col">
+    <div class="footer-col footer-contact">
       <div class="footer-heading">Контакты</div>
       <p>Тел.: +7 (900) 000-24-56</p>
       <p>Email: river@oldfloat.ru</p>
       <p>Адрес: Брянск, набережная Десны, 14</p>
       <p>Ежедневно: 06:00–21:00</p>
+      <button class="footer-contact-btn" id="contactBtn" type="button">Связаться с нами</button>
     </div>
   </div>
   <div class="container footer-bottom">
@@ -132,6 +132,24 @@
     <div>Берег • вода • снасти • сезон</div>
   </div>
 </footer>
+
+<div id="contactModal" class="modal" aria-hidden="true">
+  <div class="modal-card contact-card">
+    <button class="modal-close" id="closeContactModal" type="button" aria-label="Закрыть">×</button>
+    <div class="ribbon">обратная связь</div>
+    <h3>Напишите нам</h3>
+    <p class="contact-intro">Оставьте сообщение, если хотите уточнить подбор снастей, поведение рыбы или условия на воде.</p>
+    <form class="contact-form" id="contactForm">
+      <label>Имя<input type="text" name="name" placeholder="Ваше имя" required></label>
+      <label>Email<input type="email" name="email" placeholder="name@example.com" required></label>
+      <label>Сообщение<textarea name="message" rows="5" placeholder="Коротко опишите вопрос" required></textarea></label>
+      <div class="contact-actions">
+        <button class="btn" type="submit">Отправить</button>
+        <span class="form-status" id="contactStatus"></span>
+      </div>
+    </form>
+  </div>
+</div>
 
   <div id="tipModal" class="modal" aria-hidden="true">
     <div class="modal-card">

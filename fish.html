@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Рыба</title>
+  <title>Рыбы</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,8 +22,8 @@
 
   <main class="section">
     <div class="container">
-      <div class="section-title"><span></span><h2>Поведение рыбы</h2></div>
-      <div class="note">Сухой список названий бесполезен. Нормально работает только то, что помогает понять поведение: где рыба держится, на что реагирует и какой ошибкой её проще всего распугать.</div>
+      <div class="section-title"><span></span><h2>Рыбы и их поведение</h2></div>
+      <div class="note">Короткие карточки по популярным видам: где искать, когда рыба чаще включается и что чаще всего мешает нормальной поклёвке.</div>
 
       <div class="fish-layout">
         <aside class="fish-menu card">
@@ -38,7 +38,7 @@
         <section class="fish-stage card">
           <div class="fish-view active" id="karas">
             <div class="fish-banner warm">
-              <div class="fish-silhouette"></div>
+              <div class="fish-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Carassius%20carassius%201.jpg')"></div>
               <div>
                 <div class="ribbon">спокойная вода</div>
                 <h3>Карась</h3>
@@ -54,7 +54,7 @@
 
           <div class="fish-view" id="pike">
             <div class="fish-banner cool">
-              <div class="fish-silhouette pike"></div>
+              <div class="fish-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Pike%20fishing%20in%20Finland.JPG')"></div>
               <div>
                 <div class="ribbon">укрытие и атака</div>
                 <h3>Щука</h3>
@@ -70,7 +70,7 @@
 
           <div class="fish-view" id="okun">
             <div class="fish-banner gold">
-              <div class="fish-silhouette okun"></div>
+              <div class="fish-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/European%20perch%2020060726.jpg')"></div>
               <div>
                 <div class="ribbon">стайная рыба</div>
                 <h3>Окунь</h3>
@@ -86,7 +86,7 @@
 
           <div class="fish-view" id="lesh">
             <div class="fish-banner mist">
-              <div class="fish-silhouette lesh"></div>
+              <div class="fish-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Carp%20bream1.jpg')"></div>
               <div>
                 <div class="ribbon">стабильная точка</div>
                 <h3>Лещ</h3>
@@ -102,7 +102,7 @@
 
           <div class="fish-view" id="plotva">
             <div class="fish-banner warm">
-              <div class="fish-silhouette plotva"></div>
+              <div class="fish-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Rutilus%20rutilus%20Prague%20Vltava%205.jpg')"></div>
               <div>
                 <div class="ribbon">быстрый отклик</div>
                 <h3>Плотва</h3>
@@ -118,7 +118,7 @@
 
           <div class="fish-view" id="lin">
             <div class="fish-banner cool">
-              <div class="fish-silhouette lin"></div>
+              <div class="fish-photo" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Tinca%20tinca%20Prague%20Vltava%202.jpg')"></div>
               <div>
                 <div class="ribbon">тихая заросшая вода</div>
                 <h3>Линь</h3>
@@ -135,13 +135,60 @@
       </div>
     </div>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-box">
-      <div>Рыба не обязана вести себя по форумным легендам.</div>
-      <div>Старый поплавок</div>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-col footer-branding">
+      <div class="footer-title">Старый поплавок</div>
+      <p>Наблюдения о рыбалке, поведении рыбы, выборе снастей и чтении водоёма без шумной витрины и пустых обещаний.</p>
     </div>
-  </footer>
+    <div class="footer-col">
+      <div class="footer-heading">Навигация</div>
+      <a href="index.html">Главная</a>
+      <a href="spots.html">Места</a>
+      <a href="fish.html">Рыба</a>
+      <a href="gear.html">Снасти</a>
+      <a href="tips.html">Советы</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Разделы</div>
+      <a href="spots.html#routes">Береговые точки</a>
+      <a href="gear.html#kits">Комплекты снастей</a>
+      <a href="tips.html#checklist">Памятка перед выездом</a>
+      <a href="fish.html">Поведение рыбы</a>
+    </div>
+    <div class="footer-col footer-contact">
+      <div class="footer-heading">Контакты</div>
+      <p>Тел.: +7 (900) 000-24-56</p>
+      <p>Email: river@oldfloat.ru</p>
+      <p>Адрес: Брянск, набережная Десны, 14</p>
+      <p>Ежедневно: 06:00–21:00</p>
+      <button class="footer-contact-btn" id="contactBtn" type="button">Связаться с нами</button>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <div>© Старый поплавок</div>
+    <div>Берег • вода • снасти • сезон</div>
+  </div>
+</footer>
+
+<div id="contactModal" class="modal" aria-hidden="true">
+  <div class="modal-card contact-card">
+    <button class="modal-close" id="closeContactModal" type="button" aria-label="Закрыть">×</button>
+    <div class="ribbon">обратная связь</div>
+    <h3>Напишите нам</h3>
+    <p class="contact-intro">Оставьте сообщение, если хотите уточнить подбор снастей, поведение рыбы или условия на воде.</p>
+    <form class="contact-form" id="contactForm">
+      <label>Имя<input type="text" name="name" placeholder="Ваше имя" required></label>
+      <label>Email<input type="email" name="email" placeholder="name@example.com" required></label>
+      <label>Сообщение<textarea name="message" rows="5" placeholder="Коротко опишите вопрос" required></textarea></label>
+      <div class="contact-actions">
+        <button class="btn" type="submit">Отправить</button>
+        <span class="form-status" id="contactStatus"></span>
+      </div>
+    </form>
+  </div>
+</div>
+
 
   <script src="script.js"></script>
 </body>

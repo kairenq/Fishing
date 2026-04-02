@@ -89,3 +89,48 @@ if (fishTabs.length && fishViews.length) {
     });
   });
 }
+
+
+function openContactModal() {
+  const modal = document.getElementById('contactModal');
+  if (!modal) return;
+  modal.classList.add('show');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('modal-open');
+}
+
+function closeContactModal() {
+  const modal = document.getElementById('contactModal');
+  if (!modal) return;
+  modal.classList.remove('show');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('modal-open');
+}
+
+const contactBtn = document.getElementById('contactBtn');
+if (contactBtn) contactBtn.addEventListener('click', openContactModal);
+const closeContactBtn = document.getElementById('closeContactModal');
+if (closeContactBtn) closeContactBtn.addEventListener('click', closeContactModal);
+const contactModal = document.getElementById('contactModal');
+if (contactModal) {
+  contactModal.addEventListener('click', (e) => {
+    if (e.target === contactModal) closeContactModal();
+  });
+}
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const status = document.getElementById('contactStatus');
+    const formData = new FormData(contactForm);
+    const name = String(formData.get('name') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+    if (!name || !email || !message) {
+      if (status) status.textContent = 'Заполните все поля.';
+      return;
+    }
+    if (status) status.textContent = 'Сообщение принято. Ответ обычно дают в течение дня.';
+    contactForm.reset();
+  });
+}
