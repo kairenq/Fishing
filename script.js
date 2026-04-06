@@ -107,8 +107,12 @@ function closeContactModal() {
   document.body.classList.remove('modal-open');
 }
 
-const contactBtn = document.getElementById('contactBtn');
-if (contactBtn) contactBtn.addEventListener('click', openContactModal);
+document.querySelectorAll('#contactBtn, [data-open-contact="true"]').forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openContactModal();
+  });
+});
 const closeContactBtn = document.getElementById('closeContactModal');
 if (closeContactBtn) closeContactBtn.addEventListener('click', closeContactModal);
 const contactModal = document.getElementById('contactModal');

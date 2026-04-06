@@ -49,6 +49,19 @@ button{font:inherit}
   border-radius:999px;font-size:14px;transition:.25s
 }
 .nav a:hover,.nav a.active{background:#fff7ea;color:var(--wood);transform:translateY(-1px)}
+.nav-contact-btn{
+  background:#f1e0bb !important;
+  color:var(--text) !important;
+  border:1px solid rgba(255,247,234,.38) !important;
+  font-weight:700;
+  box-shadow:0 8px 18px rgba(70,50,25,.12);
+}
+.nav-contact-btn:hover{
+  background:#fff7ea !important;
+  color:var(--wood) !important;
+  transform:translateY(-1px);
+}
+
 
 .hero{padding:56px 0 26px}
 .hero-card{
