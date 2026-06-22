@@ -26,7 +26,10 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 button{font:inherit}
 .container{width:min(1100px,92%);margin:0 auto}
-
+.spot-card {
+  /* ... остальные свойства ... */
+  border-radius: 20px;  /* добавить это */
+}
 .topbar{
   border-bottom:3px solid var(--wood);
   background:linear-gradient(to right,rgba(124,86,51,.95),rgba(85,58,36,.96));
