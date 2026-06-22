@@ -26,10 +26,7 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 button{font:inherit}
 .container{width:min(1100px,92%);margin:0 auto}
-.spot-card {
-  /* ... остальные свойства ... */
-  border-radius: 20px;  /* добавить это */
-}
+
 .topbar{
   border-bottom:3px solid var(--wood);
   background:linear-gradient(to right,rgba(124,86,51,.95),rgba(85,58,36,.96));
@@ -288,3 +285,4 @@ th{background:#ede3d2;text-transform:uppercase;font-size:12px;letter-spacing:.08
 .spot-card::before{left:0;right:0;bottom:0;height:96px;opacity:.85}
 .spot-card::after{height:16px}
 .spot-card p{max-width:none}
+.spot-card { border-radius: 20px !important; }
