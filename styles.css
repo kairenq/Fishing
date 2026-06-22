@@ -286,3 +286,14 @@ th{background:#ede3d2;text-transform:uppercase;font-size:12px;letter-spacing:.08
 .spot-card::after{height:16px}
 .spot-card p{max-width:none}
 .spot-card { border-radius: 20px !important; }
+
+.spot-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border: 1px solid rgba(46, 38, 29, .18);
+    background: rgba(255, 248, 238, .82);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-size: 12px;
+    border-radius: 20px;
+}
